@@ -21,7 +21,6 @@ public class Demo{
 			System.out.println(x + ": " + s);
 			x++;
 		}	
-		System.out.print("Choose your option: ");
 	}
 
 /* 	public static <T> T cast(Gson g, String content){
@@ -115,6 +114,9 @@ public class Demo{
 			}finally {
 	        	connection.disconnect();
 			}
+			System.out.print("Continue to test? (1/0): ");
+			String cont = myObj.nextLine();
+			if ("0".equals(cont)) break;
 	    }
 
 	} 
